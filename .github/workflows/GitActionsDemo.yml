@@ -55,6 +55,7 @@ jobs:
         run: |
          echo Building API,
          echo "printing name inside step locally ${{env.name}}"
+         echo "printing secret ===> ${{secrets.SECRET_KEY_CUSTOM}}"
     env:
       name: ajmal-test
 
