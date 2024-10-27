@@ -52,11 +52,11 @@ jobs:
         run: echo Hello Windows
 
   build-api:
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
       - name: Run a sample script
         run: |
-         echo Building API,
+         echo Building API inside the self hosted instance,
          echo "printing name inside step locally ${{env.name}}"
          echo "printing secret ===> ${{secrets.SECRET_KEY_CUSTOM}}"
     env:
